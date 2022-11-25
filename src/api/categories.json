@@ -1,0 +1,18 @@
+  [
+    {
+      "Id": 1,
+      "name": "Dairy Products",
+      "gstPercentage": 9
+    },
+    {
+        "Id": 2,
+        "name": "Clothes",
+        "gstPercentage": 12
+    },
+    {
+        "Id": 3,
+        "name": "Footwear",
+        "gstPercentage": 18
+    }
+  ]
+

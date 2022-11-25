@@ -1,0 +1,29 @@
+<div class="calculator_content">
+  <p>Financial Calculator for GST</p>
+  <form [formGroup]="mainFormGroup">
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="inputCategory">Category</label>
+      <select class="form-select" id="inputCategory">
+        <option selected="selected" value="one" *ngFor="let item of categoryList" name="">{{item.name}}</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <div class="col-5">
+        <label for="inputAmount" class="input-group-text">Enter Amount</label>
+      </div>
+      <div class="col-7">
+        <input type="number" class="form-control" formControlName="priceControl" id="price">
+      </div>
+    </div>
+    <div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button" (click)="calculateGST()">Calculate</button>
+      </div>
+    </div>
+  </form>
+  <div>
+    <p></p>
+  </div>
+
+</div>
